@@ -1,4 +1,3 @@
-
 // GorillasTracker.java
 // Andrew Davison, Feb 2012, ad@fivedots.psu.ac.th
 
@@ -42,11 +41,9 @@ public class GorillasTracker extends JFrame {
         setResizable(false);
         setLocationRelativeTo(null);
         setVisible(true);
-    } // end of GorillasTracker()
-
-    // -------------------------------------------------------
+    }
 
     public static void main(String args[]) {
         new GorillasTracker();
     }
-} // end of GorillasTracker class
+}

@@ -1,11 +1,10 @@
-
 // Skeletons.java
 // Andrew Davison, September 2011, ad@fivedots.psu.ac.th
 
 /* Skeletons sets up four 'observers' (listeners) so that 
    when a new user is detected in the scene, a standard pose for that 
    user is detected, the user skeleton is calibrated in the pose, and then the
-   skeleton is tracked. The start of tracking adds a skeleton entry to userSkels.
+   skeleton is tracked. The start of tracking adds a skeleton entry to userSkeletonJoints.
 
    Each call to update() updates the joint positions for each user's
    skeleton.
@@ -42,43 +41,29 @@ public class Skeletons {
     private static final String HEAD_FNM = "gorilla.png";
 
     // used to colour a user's limbs so they're different from the user's body color
-    private Color USER_COLORS[] = {
-            Color.RED, Color.BLUE, Color.CYAN, Color.GREEN,
-            Color.MAGENTA, Color.PINK, Color.YELLOW, Color.WHITE };
-    // same user colors as in TrackersPanel
+    private Color USER_COLORS[] = { Color.RED, Color.BLUE, Color.CYAN, Color.GREEN, Color.MAGENTA, Color.PINK, Color.YELLOW, Color.WHITE };
 
-    private BufferedImage headImage;    // image that's drawn over the head joint
+    private BufferedImage headImage;
 
-    // OpenNI
-    private UserGenerator userGen;
-    private DepthGenerator depthGen;
+    private UserGenerator userGenerator;
+    private DepthGenerator depthGenerator;
 
-    // OpenNI capabilities used by UserGenerator
-    private SkeletonCapability skelCap;
-    // to output skeletal data, including the location of the joints
-    private PoseDetectionCapability poseDetectionCap;
-    // to recognize when the user is in a specific position
+    private SkeletonCapability skeletonCapability;
+    private PoseDetectionCapability poseDetectionCapability;
 
-    private String calibPoseName = null;
+    private String calibrationPoseName = null;
 
-    private HashMap<Integer, HashMap<SkeletonJoint, SkeletonJointPosition>> userSkels;
-    // was SkeletonJointTransformation
-    /* userSkels maps user IDs --> a joints map (i.e. a skeleton)
-       skeleton maps joints --> positions (was positions + orientations)
-    */
+    private HashMap<Integer, HashMap<SkeletonJoint, SkeletonJointPosition>> userSkeletonJoints;
 
-    public Skeletons(UserGenerator userGen, DepthGenerator depthGen) {
-        this.userGen = userGen;
-        this.depthGen = depthGen;
-
+    public Skeletons(UserGenerator userGenerator, DepthGenerator depthGenerator) {
+        this.userGenerator = userGenerator;
+        this.depthGenerator = depthGenerator;
         headImage = loadImage(HEAD_FNM);
         configure();
-        userSkels = new HashMap<Integer, HashMap<SkeletonJoint, SkeletonJointPosition>>();
-    } // end of Skeletons()
+        userSkeletonJoints = new HashMap<Integer, HashMap<SkeletonJoint, SkeletonJointPosition>>();
+    }
 
-    private BufferedImage loadImage(String fnm)
-    // load the image from fnm
-    {
+    private BufferedImage loadImage(String fnm) {
         BufferedImage im = null;
         try {
             im = ImageIO.read(new File(fnm));
@@ -88,178 +73,146 @@ public class Skeletons {
         }
 
         return im;
-    }  // end of loadImage()
+    }
 
-    private void configure()
-  /* create pose and skeleton detection capabilities for the user generator, 
-     and set up observers (listeners)   */ {
+    private void configure() {
+        /*
+            create pose and skeleton detection capabilities for the user generator,
+            and set up observers (listeners)
+         */
         try {
             // setup UserGenerator pose and skeleton detection capabilities;
             // should really check these using ProductionNode.isCapabilitySupported()
-            poseDetectionCap = userGen.getPoseDetectionCapability();
+            poseDetectionCapability = userGenerator.getPoseDetectionCapability();
 
-            skelCap = userGen.getSkeletonCapability();
-            calibPoseName = skelCap.getSkeletonCalibrationPose();  // the 'psi' pose
-            skelCap.setSkeletonProfile(SkeletonProfile.ALL);
+            skeletonCapability = userGenerator.getSkeletonCapability();
+            calibrationPoseName = skeletonCapability.getSkeletonCalibrationPose();  // the 'psi' pose
+            skeletonCapability.setSkeletonProfile(SkeletonProfile.ALL);
             // other possible values: UPPER_BODY, LOWER_BODY, HEAD_HANDS
 
             // set up four observers
-            userGen.getNewUserEvent().addObserver(new NewUserObserver());   // new user found
-            userGen.getLostUserEvent().addObserver(new LostUserObserver()); // lost a user
-
-            poseDetectionCap.getPoseDetectedEvent().addObserver(
-                    new PoseDetectedObserver());
-            // for when a pose is detected
-
-            skelCap.getCalibrationCompleteEvent().addObserver(
-                    new CalibrationCompleteObserver());
-            // for when skeleton calibration is completed, and tracking starts
+            userGenerator.getNewUserEvent().addObserver(new NewUserObserver());
+            userGenerator.getLostUserEvent().addObserver(new LostUserObserver());
+            poseDetectionCapability.getPoseDetectedEvent().addObserver(new PoseDetectedObserver());
+            skeletonCapability.getCalibrationCompleteEvent().addObserver(new CalibrationCompleteObserver());
         } catch (Exception e) {
             System.out.println(e);
             System.exit(1);
         }
-    }  // end of configure()
+    }
 
-    // --------------- updating ----------------------------
-
-    public void update()
     // update skeleton of each user
-    {
+    public void update() {
         try {
-            int[] userIDs = userGen.getUsers();   // there may be many users in the scene
-            for (int i = 0; i < userIDs.length; ++i) {
+            int[] userIDs = userGenerator.getUsers();
+            for (int i = 0; i < userIDs.length; ++ i) {
                 int userID = userIDs[i];
-                if (skelCap.isSkeletonCalibrating(userID)) {
-                    continue;    // test to avoid occassional crashes with isSkeletonTracking()
+                if (skeletonCapability.isSkeletonCalibrating(userID)) {
+                    // test to avoid occasional crashes with isSkeletonTracking()
+                    continue;
                 }
-                if (skelCap.isSkeletonTracking(userID)) {
+                if (skeletonCapability.isSkeletonTracking(userID)) {
                     updateJoints(userID);
                 }
             }
         } catch (StatusException e) {
             System.out.println(e);
         }
-    }  // end of update()
+    }
 
-    private void updateJoints(int userID)
-    // update all the joints for this userID in userSkels
-    {
-        HashMap<SkeletonJoint, SkeletonJointPosition> skel = userSkels.get(userID);
+    // update all the joints for this userID in userSkeletonJoints
+    private void updateJoints(int userID) {
+        HashMap<SkeletonJoint, SkeletonJointPosition> skeletonJoints = userSkeletonJoints.get(userID);
 
-        updateJoint(skel, userID, SkeletonJoint.HEAD);
-        updateJoint(skel, userID, SkeletonJoint.NECK);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.HEAD);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.NECK);
 
-        updateJoint(skel, userID, SkeletonJoint.LEFT_SHOULDER);
-        updateJoint(skel, userID, SkeletonJoint.LEFT_ELBOW);
-        updateJoint(skel, userID, SkeletonJoint.LEFT_HAND);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.LEFT_SHOULDER);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.LEFT_ELBOW);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.LEFT_HAND);
 
-        updateJoint(skel, userID, SkeletonJoint.RIGHT_SHOULDER);
-        updateJoint(skel, userID, SkeletonJoint.RIGHT_ELBOW);
-        updateJoint(skel, userID, SkeletonJoint.RIGHT_HAND);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.RIGHT_SHOULDER);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.RIGHT_ELBOW);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.RIGHT_HAND);
 
-        updateJoint(skel, userID, SkeletonJoint.TORSO);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.TORSO);
 
-        updateJoint(skel, userID, SkeletonJoint.LEFT_HIP);
-        updateJoint(skel, userID, SkeletonJoint.LEFT_KNEE);
-        updateJoint(skel, userID, SkeletonJoint.LEFT_FOOT);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.LEFT_HIP);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.LEFT_KNEE);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.LEFT_FOOT);
 
-        updateJoint(skel, userID, SkeletonJoint.RIGHT_HIP);
-        updateJoint(skel, userID, SkeletonJoint.RIGHT_KNEE);
-        updateJoint(skel, userID, SkeletonJoint.RIGHT_FOOT);
-    }  // end of updateJoints()
+        updateJoint(skeletonJoints, userID, SkeletonJoint.RIGHT_HIP);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.RIGHT_KNEE);
+        updateJoint(skeletonJoints, userID, SkeletonJoint.RIGHT_FOOT);
+    }
 
-
-/*
-  private void updateJoints(int userID)   // alternative version
-  // update all the joints for this userID in userSkels
-  {
-    HashMap<SkeletonJoint, SkeletonJointPosition> skel = userSkels.get(userID);
-    for(SkeletonJoint j : SkeletonJoint.values())
-      updateJoint(skel, userID, j);
-  }  // end of updateJoints()
-*/
-
-    private void updateJoint(HashMap<SkeletonJoint, SkeletonJointPosition> skel,
-                             int userID, SkeletonJoint joint)
-  /* update the position of the specified user's joint by 
-     looking at the skeleton capability
-  */ {
+    private void updateJoint(HashMap<SkeletonJoint, SkeletonJointPosition> skel, int userID, SkeletonJoint joint) {
+        /*
+            update the position of the specified user's joint by
+            looking at the skeleton capability
+        */
         try {
             // report unavailable joints (should not happen)
-            if (!skelCap.isJointAvailable(joint) || !skelCap.isJointActive(joint)) {
+            if (! skeletonCapability.isJointAvailable(joint) || ! skeletonCapability.isJointActive(joint)) {
                 System.out.println(joint + " not available for updates");
                 return;
             }
 
-            SkeletonJointPosition pos = skelCap.getSkeletonJointPosition(userID, joint);
+            SkeletonJointPosition pos = skeletonCapability.getSkeletonJointPosition(userID, joint);
             if (pos == null) {
                 System.out.println("No update for " + joint);
                 return;
             }
       
- /*
-      // the call to getSkeletonJointOrientation() crashes Java!
-      SkeletonJointOrientation ori = skelCap.getSkeletonJointOrientation(userID, joint);
-      if (ori == null)
-        System.out.println("No orientation for " + joint);
-      else
-        System.out.println("Orientation for " + joint + ": " + ori);
-*/
-            SkeletonJointPosition jPos = null;
-            if (pos.getPosition().getZ() != 0)   // has a depth position
-            {
-                jPos = new SkeletonJointPosition(
-                        depthGen.convertRealWorldToProjective(pos.getPosition()),
-                        pos.getConfidence());
-            } else  // no info found for that user's joint
-            {
-                jPos = new SkeletonJointPosition(new Point3D(), 0);
+            SkeletonJointPosition skeletonJointPosition = null;
+            if (pos.getPosition().getZ() != 0) {
+                skeletonJointPosition = new SkeletonJointPosition(
+                        depthGenerator.convertRealWorldToProjective(pos.getPosition()), pos.getConfidence());
+            } else {
+                skeletonJointPosition = new SkeletonJointPosition(new Point3D(), 0);
             }
-            skel.put(joint, jPos);
+            skel.put(joint, skeletonJointPosition);
         } catch (StatusException e) {
             System.out.println(e);
         }
-    }  // end of updateJoint()
+    }
 
-    // -------------------- drawing --------------------------------
-
-    public void draw(Graphics2D g2d)
     // draw skeleton of each user, with a head image, and user status
-    {
+    public void draw(Graphics2D g2d) {
         g2d.setStroke(new BasicStroke(8));
 
         try {
-            int[] userIDs = userGen.getUsers();
-            for (int i = 0; i < userIDs.length; ++i) {
+            int[] userIDs = userGenerator.getUsers();
+            for (int i = 0; i < userIDs.length; ++ i) {
                 setLimbColor(g2d, userIDs[i]);
-                if (skelCap.isSkeletonCalibrating(userIDs[i])) {
-                }  // test to avoid occassional crashes with isSkeletonTracking()
-                else if (skelCap.isSkeletonTracking(userIDs[i])) {
-                    HashMap<SkeletonJoint, SkeletonJointPosition> skel =
-                            userSkels.get(userIDs[i]);
-                    drawSkeleton(g2d, skel);
-                    drawHead(g2d, skel);
+                if (skeletonCapability.isSkeletonCalibrating(userIDs[i])) {
+                  // test to avoid occasional crashes with isSkeletonTracking()
+                }
+                else if (skeletonCapability.isSkeletonTracking(userIDs[i])) {
+                    HashMap<SkeletonJoint, SkeletonJointPosition> skeletonJoints = userSkeletonJoints.get(userIDs[i]);
+                    drawSkeleton(g2d, skeletonJoints);
+                    drawHead(g2d, skeletonJoints);
                 }
                 drawUserStatus(g2d, userIDs[i]);
             }
         } catch (StatusException e) {
             System.out.println(e);
         }
-    }  // end of draw()
+    }
 
-    private void setLimbColor(Graphics2D g2d, int userID)
-  /* use the 'opposite' of the user ID color for the limbs, so they
-     stand out against the colored body */ {
+    private void setLimbColor(Graphics2D g2d, int userID) {
+        /*
+            use the 'opposite' of the user ID color for the limbs, so they
+            stand out against the colored body
+        */
         Color c = USER_COLORS[userID % USER_COLORS.length];
         Color oppColor = new Color(255 - c.getRed(), 255 - c.getGreen(), 255 - c.getBlue());
         g2d.setColor(oppColor);
-    }  // end of setLimbColor()
+    }
 
-    private void drawSkeleton(Graphics2D g2d,
-                              HashMap<SkeletonJoint, SkeletonJointPosition> skel)
     // draw skeleton as lines (limbs) between its joints;
     // hardwired to avoid non-implemented joints
-    {
+    private void drawSkeleton(Graphics2D g2d, HashMap<SkeletonJoint, SkeletonJointPosition> skel) {
         drawLine(g2d, skel, SkeletonJoint.HEAD, SkeletonJoint.NECK);
 
         drawLine(g2d, skel, SkeletonJoint.LEFT_SHOULDER, SkeletonJoint.TORSO);
@@ -282,156 +235,130 @@ public class Skeletons {
 
         drawLine(g2d, skel, SkeletonJoint.RIGHT_HIP, SkeletonJoint.RIGHT_KNEE);
         drawLine(g2d, skel, SkeletonJoint.RIGHT_KNEE, SkeletonJoint.RIGHT_FOOT);
-    }  // end of drawSkeleton()
+    }
 
-    private void drawLine(Graphics2D g2d,
-                          HashMap<SkeletonJoint, SkeletonJointPosition> skel,
-                          SkeletonJoint j1, SkeletonJoint j2)
     // draw a line (limb) between the two joints (if they have positions)
-    {
+    private void drawLine(Graphics2D g2d, HashMap<SkeletonJoint, SkeletonJointPosition> skel, SkeletonJoint j1, SkeletonJoint j2) {
         Point3D p1 = getJointPos(skel, j1);
         Point3D p2 = getJointPos(skel, j2);
         if ((p1 != null) && (p2 != null)) {
-            g2d.drawLine((int) p1.getX(), (int) p1.getY(),
-                         (int) p2.getX(), (int) p2.getY());
+            g2d.drawLine((int) p1.getX(), (int) p1.getY(), (int) p2.getX(), (int) p2.getY());
         }
-    }  // end of drawLine()
+    }
 
-    private Point3D getJointPos(HashMap<SkeletonJoint, SkeletonJointPosition> skel,
-                                SkeletonJoint j)
     // get the (x, y, z) coordinate for the joint (or return null)
-    {
-        SkeletonJointPosition pos = skel.get(j);
+    private Point3D getJointPos(HashMap<SkeletonJoint, SkeletonJointPosition> skeletonJoints, SkeletonJoint joint) {
+        SkeletonJointPosition pos = skeletonJoints.get(joint);
         if (pos == null) {
             return null;
         }
 
+        // don't draw a line to a joint with a zero-confidence pos
         if (pos.getConfidence() == 0) {
-            return null;   // don't draw a line to a joint with a zero-confidence pos
+            return null;
         }
 
         return pos.getPosition();
-    }  // end of getJointPos()
+    }
 
-    private void drawHead(Graphics2D g2d,
-                          HashMap<SkeletonJoint, SkeletonJointPosition> skel)
     // draw a head image rotated around the z-axis to follow the neck-->head line
-    {
+    private void drawHead(Graphics2D g2d, HashMap<SkeletonJoint, SkeletonJointPosition> skeletonJoints) {
         if (headImage == null) {
             return;
         }
 
-        Point3D headPt = getJointPos(skel, SkeletonJoint.HEAD);
-        Point3D neckPt = getJointPos(skel, SkeletonJoint.NECK);
+        Point3D headPt = getJointPos(skeletonJoints, SkeletonJoint.HEAD);
+        Point3D neckPt = getJointPos(skeletonJoints, SkeletonJoint.NECK);
         if ((headPt == null) || (neckPt == null)) {
             return;
         } else {
-            int angle = 90 - ((int) Math.round(Math.toDegrees(
-                    Math.atan2(neckPt.getY() - headPt.getY(),
-                               headPt.getX() - neckPt.getX()))));
-            // System.out.println("Head image rotated from vertical by " + angle + " degrees");
+            int angle = 90 - ((int) Math.round(Math.toDegrees(Math.atan2(neckPt.getY() - headPt.getY(), headPt.getX() - neckPt.getX()))));
             drawRotatedHead(g2d, headPt, headImage, angle);
         }
-    }  // end of drawHead()
+    }
 
-    private void drawRotatedHead(Graphics2D g2d, Point3D headPt,
-                                 BufferedImage headImage, int angle) {
-        AffineTransform origTF = g2d.getTransform();    // store original orientation
-        AffineTransform newTF = (AffineTransform) (origTF.clone());
+    private void drawRotatedHead(Graphics2D g2d, Point3D headPt, BufferedImage headImage, int angle) {
+        AffineTransform originalTransform = g2d.getTransform();
+        AffineTransform headTransform = (AffineTransform) (originalTransform.clone());
 
         // center of rotation is the head joint
-        newTF.rotate(Math.toRadians(angle), (int) headPt.getX(), (int) headPt.getY());
-        g2d.setTransform(newTF);
+        headTransform.rotate(Math.toRadians(angle), (int) headPt.getX(), (int) headPt.getY());
+        g2d.setTransform(headTransform);
 
         // draw image centered at head joint
         int x = (int) headPt.getX() - (headImage.getWidth() / 2);
         int y = (int) headPt.getY() - (headImage.getHeight() / 2);
         g2d.drawImage(headImage, x, y, null);
 
-        g2d.setTransform(origTF);    // reset original orientation
-    }  // end of drawRotatedHead()
+        g2d.setTransform(originalTransform);    // reset original orientation
+    }
 
-    private void drawUserStatus(Graphics2D g2d, int userID) throws StatusException
     // draw user ID and status on the skeleton at its center of mass (CoM)
-    {
-        Point3D massCenter = depthGen.convertRealWorldToProjective(
-                userGen.getUserCoM(userID));
-        String label = null;
-        if (skelCap.isSkeletonTracking(userID))     // tracking
-        {
-            label = new String("Tracking user " + userID);
-        } else if (skelCap.isSkeletonCalibrating(userID))  // calibrating
-        {
-            label = new String("Calibrating user " + userID);
-        } else    // pose detection
-        {
-            label = new String("Looking for " + calibPoseName + " pose for user " + userID);
+    private void drawUserStatus(Graphics2D g2d, int userID) throws StatusException {
+        Point3D massCenter = depthGenerator.convertRealWorldToProjective(userGenerator.getUserCoM(userID));
+        String label;
+        if (skeletonCapability.isSkeletonTracking(userID)) {
+            label = "Tracking user " + userID;
+        } else if (skeletonCapability.isSkeletonCalibrating(userID)) {
+            label = "Calibrating user " + userID;
+        } else {
+            label = "Looking for " + calibrationPoseName + " pose for user " + userID;
         }
 
         g2d.drawString(label, (int) massCenter.getX(), (int) massCenter.getY());
-    }  // end of drawUserStatus()
+    }
 
     // --------------------- 4 observers -----------------------
-  /*   user detection --> pose detection --> skeleton calibration -->
-       skeleton tracking (and creation of userSkels entry)
-       + may also lose a user (and so delete its userSkels entry)
-  */
+    /*
+        user detection --> pose detection --> skeleton calibration -->
+        skeleton tracking (and creation of userSkeletonJoints entry)
+        + may also lose a user (and so delete its userSkeletonJoints entry)
+    */
 
     class NewUserObserver implements IObserver<UserEventArgs> {
         public void update(IObservable<UserEventArgs> observable, UserEventArgs args) {
             System.out.println("Detected new user " + args.getId());
             try {
                 // try to detect a pose for the new user
-                poseDetectionCap.StartPoseDetection(calibPoseName, args.getId());   // big-S ?
+                poseDetectionCapability.startPoseDetection(calibrationPoseName, args.getId());   // big-S ?
             } catch (StatusException e) {
                 e.printStackTrace();
             }
         }
-    }  // end of NewUserObserver inner class
+    }
 
     class LostUserObserver implements IObserver<UserEventArgs> {
         public void update(IObservable<UserEventArgs> observable, UserEventArgs args) {
-            System.out.println("Lost track of user " + args.getId());
-            userSkels.remove(args.getId());    // remove user from userSkels
+            userSkeletonJoints.remove(args.getId());
         }
-    } // end of LostUserObserver inner class
+    }
 
     class PoseDetectedObserver implements IObserver<PoseDetectionEventArgs> {
-        public void update(IObservable<PoseDetectionEventArgs> observable,
-                           PoseDetectionEventArgs args) {
+        public void update(IObservable<PoseDetectionEventArgs> observable, PoseDetectionEventArgs args) {
             int userID = args.getUser();
-            System.out.println(args.getPose() + " pose detected for user " + userID);
             try {
-                // finished pose detection; switch to skeleton calibration
-                poseDetectionCap.StopPoseDetection(userID);    // big-S ?
-                skelCap.requestSkeletonCalibration(userID, true);
+                poseDetectionCapability.stopPoseDetection(userID);
+                skeletonCapability.requestSkeletonCalibration(userID, true);
             } catch (StatusException e) {
                 e.printStackTrace();
             }
         }
-    }  // end of PoseDetectedObserver inner class
+    }
 
     class CalibrationCompleteObserver implements IObserver<CalibrationProgressEventArgs> {
-        public void update(IObservable<CalibrationProgressEventArgs> observable,
-                           CalibrationProgressEventArgs args) {
+        public void update(IObservable<CalibrationProgressEventArgs> observable, CalibrationProgressEventArgs args) {
             int userID = args.getUser();
             System.out.println("Calibration status: " + args.getStatus() + " for user " + userID);
             try {
                 if (args.getStatus() == CalibrationProgressStatus.OK) {
-                    // calibration succeeeded; move to skeleton tracking
-                    System.out.println("Starting tracking user " + userID);
-                    skelCap.startTracking(userID);
-                    userSkels.put(new Integer(userID),
-                                  new HashMap<SkeletonJoint, SkeletonJointPosition>());
-                    // create new skeleton map for the user in userSkels
-                } else    // calibration failed; return to pose detection
-                {
-                    poseDetectionCap.StartPoseDetection(calibPoseName, userID);    // big-S ?
+                    skeletonCapability.startTracking(userID);
+                    userSkeletonJoints.put(userID, new HashMap<SkeletonJoint, SkeletonJointPosition>());
+                } else  {
+                    poseDetectionCapability.startPoseDetection(calibrationPoseName, userID);
                 }
             } catch (StatusException e) {
                 e.printStackTrace();
             }
         }
-    }  // end of CalibrationCompleteObserver inner class
-} // end of Skeletons class
-
+    }
+}
