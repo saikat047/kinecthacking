@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" name="Default" comment="">
+    <list default="true" id="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" name="Default" comment="Format GorillaTracker code">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/GorillasTracker/GorillasTracker.java" afterPath="$PROJECT_DIR$/samples/OpenNI/GorillasTracker/GorillasTracker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/GorillasTracker/Skeletons.java" afterPath="$PROJECT_DIR$/samples/OpenNI/GorillasTracker/Skeletons.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/GorillasTracker/TrackerPanel.java" afterPath="$PROJECT_DIR$/samples/OpenNI/GorillasTracker/TrackerPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kinecthacking.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382120164167" ignored="false" />
+    <file path="/Dummy.txt" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382123085668" ignored="false" />
     <file path="/fragment.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382121804866" ignored="false" />
     <file path="/SimpleOpenNI.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381572257183" ignored="false" />
     <file path="/ViewerPanel.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381582109419" ignored="false" />
@@ -446,8 +445,8 @@
     <file path="$PROJECT_DIR$/../fasit/elling/ui/src/main/java/elling/ui/client/EllingValidatorFactory.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320511" ignored="false" />
     <file path="/*.regexp" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382119795519" ignored="false" />
     <file path="/TrackerPanel.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382119985705" ignored="false" />
-    <file path="/a.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382121644967" ignored="false" />
-    <file path="/sample.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382121750725" ignored="false" />
+    <file path="/a.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382123178616" ignored="false" />
+    <file path="/sample.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382123191658" ignored="false" />
     <file path="/Skeletons.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382122592019" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -564,21 +563,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrackerPanel.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TrackerPanel.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker/TrackerPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="29" selection-start="8149" selection-end="8149" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#9823#0" expanded="true" />
-              </folding>
+            <state line="9" column="22" selection-start="308" selection-end="308" vertical-scroll-proportion="0.34526855">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GorillasTracker.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GorillasTracker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker/GorillasTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="32" selection-start="583" selection-end="583" vertical-scroll-proportion="0.5247525">
+            <state line="21" column="13" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#1197#0" expanded="true" />
               </folding>
@@ -1098,6 +1095,23 @@
       <AnalysisUIOptions />
     </option>
   </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" name="Default" comment="" />
@@ -1112,7 +1126,11 @@
       <created>1382120191440</created>
       <updated>1382120191440</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Format GorillaTracker code">
+      <created>1382122963489</created>
+      <updated>1382122963489</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1186,7 +1204,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Check-in working version of Gorilla tracker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Format GorillaTracker code" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1202,6 +1220,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Add SimpleOpenNI example" />
     <MESSAGE value="Check-in working version of Gorilla tracker" />
+    <MESSAGE value="Format GorillaTracker code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1293,15 +1312,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker/TrackerPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="29" selection-start="8149" selection-end="8149" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#9823#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker/Skeletons.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="13" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0">
@@ -1319,10 +1329,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker/GorillasTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="32" selection-start="583" selection-end="583" vertical-scroll-proportion="0.5247525">
+        <state line="21" column="13" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#1197#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker/TrackerPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="22" selection-start="308" selection-end="308" vertical-scroll-proportion="0.34526855">
+          <folding />
         </state>
       </provider>
     </entry>
