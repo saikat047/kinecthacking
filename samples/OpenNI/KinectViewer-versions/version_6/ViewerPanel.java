@@ -19,22 +19,27 @@
 */
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.awt.image.DataBufferByte;
+import java.awt.image.IndexColorModel;
+import java.awt.image.WritableRaster;
+import java.nio.ByteBuffer;
+import java.nio.ShortBuffer;
+import java.text.DecimalFormat;
 
 import javax.swing.*;
 
-import java.awt.image.*;
-import java.text.DecimalFormat;
-import java.io.*;
+import org.OpenNI.Context;
+import org.OpenNI.DepthGenerator;
+import org.OpenNI.DepthMetaData;
+import org.OpenNI.GeneralException;
+import org.OpenNI.ImageGenerator;
+import org.OpenNI.License;
+import org.OpenNI.MapOutputMode;
+import org.OpenNI.PixelFormat;
+import org.OpenNI.StatusException;
 
-import javax.imageio.*;
-
-import java.util.*;
-
-import org.OpenNI.*;
-
-import java.nio.*;
-
-import edu.scripps.fl.color.*;
+import edu.scripps.fl.color.ColorUtils;
 
 public class ViewerPanel extends JPanel implements Runnable {
     private static final int MAX_DEPTH_SIZE = 10000;

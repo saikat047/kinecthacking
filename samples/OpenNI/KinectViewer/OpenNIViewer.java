@@ -10,43 +10,39 @@
 */
 
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
 import javax.swing.*;
-import java.io.*;
 
+public class OpenNIViewer extends JFrame {
+    private ViewerPanel viewerPanel;
 
-public class OpenNIViewer extends JFrame 
-{
-  private ViewerPanel viewerPanel;
+    public OpenNIViewer() {
+        super("OpenNI Viewer Example");
 
+        Container c = getContentPane();
+        c.setLayout(new BorderLayout());
 
-  public OpenNIViewer()
-  {
-    super("OpenNI Viewer Example");
+        viewerPanel = new ViewerPanel();
+        c.add(viewerPanel, BorderLayout.CENTER);
 
-    Container c = getContentPane();
-    c.setLayout( new BorderLayout() );   
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                viewerPanel.closeDown();    // stop showing images
+                // System.exit(0);
+            }
+        });
 
-    viewerPanel = new ViewerPanel();
-    c.add( viewerPanel, BorderLayout.CENTER);
+        pack();
+        setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
+    } // end of OpenNIViewer()
 
-    addWindowListener( new WindowAdapter() {
-      public void windowClosing(WindowEvent e)
-      { viewerPanel.closeDown();    // stop showing images
-        // System.exit(0);
-      }
-    });
+    // -------------------------------------------------------
 
-    pack();  
-    setResizable(false);
-    setLocationRelativeTo(null);
-    setVisible(true);
-  } // end of OpenNIViewer()
-
-
-  // -------------------------------------------------------
-
-  public static void main( String args[] )
-  {  new OpenNIViewer();  }
-
+    public static void main(String args[]) {
+        new OpenNIViewer();
+    }
 } // end of OpenNIViewer class

@@ -2,25 +2,468 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/colorutils.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer/OpenNIViewer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer/SamplesConfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer/ViewerPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_1/ViewerPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_2/ViewerPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_3/ViewerPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_4/ViewerPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_5/ViewerPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_6/ViewerPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/OpenNI/GorillasTracker/gorilla.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/OpenNI/GorillasTracker/GorillasTracker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/OpenNI/GorillasTracker/Skeletons.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/OpenNI/GorillasTracker/TrackerPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/NITE/Boxes/com/primesense/NITE/Samples/Boxes/Boxes.java" afterPath="$PROJECT_DIR$/samples/NITE/Boxes/com/primesense/NITE/Samples/Boxes/Boxes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/NITE/Boxes/com/primesense/NITE/Samples/Boxes/BoxesApplication.java" afterPath="$PROJECT_DIR$/samples/NITE/Boxes/com/primesense/NITE/Samples/Boxes/BoxesApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/NITE/Boxes/com/primesense/NITE/Samples/Boxes/MyBox.java" afterPath="$PROJECT_DIR$/samples/NITE/Boxes/com/primesense/NITE/Samples/Boxes/MyBox.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/KinectViewer/OpenNIViewer.java" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer/OpenNIViewer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/Data/Sample-Scene.xml" afterPath="$PROJECT_DIR$/samples/Data/Sample-Scene.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/Data/Sample-Tracking.xml" afterPath="$PROJECT_DIR$/samples/Data/Sample-Tracking.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/Data/Sample-User.xml" afterPath="$PROJECT_DIR$/samples/Data/Sample-User.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/Config/SamplesConfig.xml" afterPath="$PROJECT_DIR$/samples/OpenNI/Config/SamplesConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/KinectViewer/SamplesConfig.xml" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer/SamplesConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/UserTracker/org/OpenNI/Samples/UserTracker/UserTracker.java" afterPath="$PROJECT_DIR$/samples/OpenNI/UserTracker/org/OpenNI/Samples/UserTracker/UserTracker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/UserTracker/org/OpenNI/Samples/UserTracker/UserTrackerApplication.java" afterPath="$PROJECT_DIR$/samples/OpenNI/UserTracker/org/OpenNI/Samples/UserTracker/UserTrackerApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/KinectViewer/ViewerPanel.java" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer/ViewerPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_1/ViewerPanel.java" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_1/ViewerPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_2/ViewerPanel.java" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_2/ViewerPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_3/ViewerPanel.java" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_3/ViewerPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_4/ViewerPanel.java" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_4/ViewerPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_5/ViewerPanel.java" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_5/ViewerPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_6/ViewerPanel.java" afterPath="$PROJECT_DIR$/samples/OpenNI/KinectViewer-versions/version_6/ViewerPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kinecthacking.iml" afterPath="$PROJECT_DIR$/kinecthacking.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kinecthacking.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381572320216" ignored="false" />
-    <file path="/fragment.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381580864367" ignored="false" />
+    <file path="/Dummy.txt" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382119252404" ignored="false" />
+    <file path="/fragment.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382119819256" ignored="false" />
     <file path="/SimpleOpenNI.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381572257183" ignored="false" />
     <file path="/ViewerPanel.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381582109419" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/functional-tests/src/test/java/elling/seleniumtest/LaanTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-internals/1.0-SNAPSHOT/elling-internals-1.0-SNAPSHOT-tests.jar!/jdbc/jdbc-test-context.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381733704197" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/java/elling/dto/core/laan/EndreMottaker.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381752274786" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/ui/src/main/java/elling/ui/client/ui/wizard/laan/EndreMottakerView.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381752274786" ignored="false" />
+    <file path="/EndreMottakerView.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381750304122" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/java/elling/service/handler/ytelse/EndreMottakerHandler.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381735428405" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/java/elling/service/handler/laan/EndreMottakerHandler.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381744388788" ignored="false" />
+    <file path="/EndreMottakerHandler.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381735456922" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/java/elling/service/handler/laan/HentSeLaanHjelper.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="/HentSeLaanHjelper.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381757042905" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/resources/handlers.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="/handlers.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381736276690" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/solr/core0/core0/conf/schema.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381736682550" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/solr/core0/core0/conf/solrconfig.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381736682550" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/solr/core0/solr.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381736682550" ignored="false" />
+    <file path="db-console:/c18f8267/647abd0a-0665-4d08-9a7b-9cdeec01eaa7/" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381752179732" ignored="false" />
+    <file path="/FASIT" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381752179372" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/domain/src/main/java/elling/domain/sak/Laan.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/domain/src/main/java/elling/domain/populator/LaanPopulator.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/domain/src/test/java/elling/domain/sak/LaanBuilder.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381744388788" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/java/elling/repo/core/jdbc/LaanRepositoryImpl.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="/a.dummy" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381741509983" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/resources/liquibase/2013-10-10_13_24_09_FASIT-5987.sql" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381744388788" ignored="false" />
+    <file path="/2013-10-10_13_24_09_FASIT-5987.sql" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381738312487" ignored="false" />
+    <file path="/LaanRepositoryImpl.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381738399469" ignored="false" />
+    <file path="/Laan.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381738488210" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/java/elling/service/mal/context/LaanContextResolver.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381752274786" ignored="false" />
+    <file path="/LaanContextResolver.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381746324264" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/java/elling/service/handler/sak/GodkjennSakHandler.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381744388788" ignored="false" />
+    <file path="/LaanRepositoryImplTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381738623348" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/test/java/elling/repo/core/jdbc/LaanRepositoryImplTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/test/java/elling/service/mal/DokumentmalerTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381744388788" ignored="false" />
+    <file path="/DokumentmalerTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381740317460" ignored="false" />
+    <file path="/MalContextResolverTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381738664261" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/test/java/elling/service/mal/context/MalContextResolverTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381744388788" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/test/java/elling/service/mal/LaanMalTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381744388788" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/test/java/elling/service/solr/LaanIndexerTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381744388788" ignored="false" />
+    <file path="/HentSeLaanHandlerTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381739792481" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/test/java/elling/service/handler/laan/HentSeLaanHandlerTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381744388788" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/resources/liquibase/fasit-schema-populate-utv.sql" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381744388788" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/integrationAppContext.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/functional-tests/src/test/java/elling/seleniumtest/page/selaan/LaanInformasjonTabben.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381744388788" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/java/elling/service/laan/LaanStatusHjelperImpl.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320511" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/java/elling/service/handler/laan/RegistrerInnbetalingTapHandler.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381744388788" ignored="false" />
+    <file path="/LaanPopulator.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381746143367" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/domain/src/main/java/elling/domain/populator/AlternativMottakerPopulator.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381752274786" ignored="false" />
+    <file path="/AlternativMottakerPopulator.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381746290283" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/domain/src/main/java/elling/domain/populator/PersonPopulator.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381752274786" ignored="false" />
+    <file path="/PersonPopulator.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381746304429" ignored="false" />
+    <file path="/EndreMottaker.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381750161230" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/java/elling/dto/core/ytelse/EndreMottaker.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381748099446" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/resources/hjelpere.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381752274786" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/test/resources/elling/service/solr/AbstractSolrTest-context.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381752274786" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/test/java/elling/service/arkiv/CommitTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="/CommitTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753036839" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/test/java/elling/service/arkiv/RollbackTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="/RollbackTest.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753050811" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/ejb/config/spring-jee-2.5.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/oskarMigrationAppContext.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/tika/mime/tika-mimetypes.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibaseAppContext.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.camel/camel-soap/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/anonymae.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.camel/camel-spring/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.camel/camel-core-xml/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/transaction/config/spring-tx-3.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/transaction/config/spring-tx-3.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.camel/camel-blueprint/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.camel/camel-core-osgi/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.camel/camel-cxf-transport/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/transaction/config/spring-tx-2.5.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/transaction/config/spring-tx-2.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.glassfish.ha/ha-api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.jvnet.staxex/stax-ex/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/commons-beanutils/commons-beanutils/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/net.lingala.zip4j/zip4j/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.neethi/neethi/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/jackrabbit/core/query/lucene/tika-config.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.noggit/noggit/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-internals/1.0-SNAPSHOT/elling-internals-1.0-SNAPSHOT-tests.jar!/elling/service/solr/SolrServerTest-context.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/commons-fileupload/commons-fileupload/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.commons/commons-csv/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.jvnet.mimepull/mimepull/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/commons-collections/commons-collections/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.simpleframework/simple/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760859" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.googlecode.jtype/jtype/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.ftpserver/ftplet-api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.jackrabbit/jackrabbit-api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.jackrabbit/jackrabbit-jca/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.jackrabbit/jackrabbit-spi/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.jackrabbit/jackrabbit-core/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.jackrabbit/jackrabbit-webdav/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.jackrabbit/jackrabbit-jcr-rmi/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/cxf/endpoint/dynamic/simple-binding.xjb" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.jackrabbit/jackrabbit-jcr-server/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/jca/context/ra.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.jackrabbit/jackrabbit-jcr-commons/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.jackrabbit/jackrabbit-jcr-servlet/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.jackrabbit/jackrabbit-spi-commons/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.codehaus.jettison/jettison/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.aries.proxy/org.apache.aries.proxy.api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/solr/solr.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/solr/core0/conf/schema.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.ws.xmlschema/xmlschema-core/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/solr/core0/conf/solrconfig.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.sun.xml.stream.buffer/streambuffer/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/net.ju-n.commons-dbcp-jmx/commons-dbcp-jmx-jdbc4/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.geronimo.specs/geronimo-jaxws_2.2_spec/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.geronimo.specs/geronimo-servlet_2.5_spec/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.geronimo.specs/geronimo-javamail_1.4_spec/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.geronimo.specs/geronimo-ws-metadata_2.0_spec/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.sun.xml.messaging.saaj/saaj-impl/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.thoughtworks.paranamer/paranamer/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/cxf/tools/common/jaxb/W3CEPRJaxbBinding_jaxb22.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/cxf/tools/common/jaxb/W3CEPRJaxbBinding.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.aries.blueprint/org.apache.aries.blueprint/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/cache/config/spring-cache-3.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.aries.blueprint/org.apache.aries.blueprint.cm/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.aries.blueprint/org.apache.aries.blueprint.api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.aries.blueprint/org.apache.aries.blueprint.core/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.aries.testsupport/org.apache.aries.testsupport.unit/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/restlet/Component.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schema/cxfEndpoint.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.artofsolving.jodconverter/jodconverter-core/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schema/blueprint/camel-cxf.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schema/configuration/camel.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/cxf/tools/common/toolspec/tool-specification.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/jackrabbit/core/repository.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/cxf/tools/common/toolspec/command.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/cxf/tools/common/toolspec/indent-no-xml-declaration.xsl" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-ui/1.0-SNAPSHOT/elling-ui-1.0-SNAPSHOT-classes.jar!/uiAppContext.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/jaxws.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/core.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/ws-addr-conf.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/simple.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/cxf/tools/common/toolspec/indent.xsl" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/jaxrs.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/ws-addr-metadata.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/xmime.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibase/parser/core/xml/dbchangelog-1.8.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/jms-context.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/cxf/tools/common/toolspec/parser/detailedUsage.xsl" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/soap-encoding.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-internals/1.0-SNAPSHOT/elling-internals-1.0-SNAPSHOT-tests.jar!/logback-test.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/scripting/config/spring-lang-3.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibase/parser/core/xml/dbchangelog-1.6.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/wsdl.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/cxf/tools/common/toolspec/parser/usage.xsl" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-internals/1.0-SNAPSHOT/elling-internals-1.0-SNAPSHOT-tests.jar!/LiquibaseRegressionTest.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/scripting/config/spring-lang-2.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibase/parser/core/xml/dbchangelog-1.5.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/mime-binding.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibase/parser/core/xml/dbchangelog-1.4.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/addressing.xjb" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/scripting/config/spring-lang-2.5.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibase/parser/core/xml/dbchangelog-1.3.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/xml-binding.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibase/parser/core/xml/dbchangelog-1.2.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/addressing200403.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibase/parser/core/xml/dbchangelog-1.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/jackrabbit/core/test-nodetypes.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/wsrm.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibase/parser/core/xml/dbchangelog-1.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/http-conf.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/scripting/config/spring-lang-3.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibase/parser/core/xml/dbchangelog-2.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/http.xjb" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibase/parser/core/xml/dbchangelog-2.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/ws-addr-wsdl.xjb" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760860" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/addressing.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/xml.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibase/parser/core/xml/dbchangelog-1.9.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/ws-addr.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/http-conf.xjb" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/wsdl.xjb" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/XMLSchema.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibase/parser/core/xml/dbchangelog-ext.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/soap-binding.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/xml-binding.xjb" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/http.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/addressing200403.xjb" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/wsdl/ws-addr-wsdl.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/blueprint/jaxrs.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-ui/1.0-SNAPSHOT/elling-ui-1.0-SNAPSHOT-classes.jar!/elling/EllingActions.gwt.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/blueprint/core.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/blueprint/jaxws.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/blueprint/simple.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/configuration/extension.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/configuration/security.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-ui/1.0-SNAPSHOT/elling-ui-1.0-SNAPSHOT-classes.jar!/elling/ui/Elling.gwt.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/configuration/cxf-beans.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/configuration/security.xjb" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/configuration/http-conf.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/configuration/parameterized-types.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/configuration/soap.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemas/configuration/blueprint/soap.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/oracle/jdbc/driver/errorMap.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/validation-mapping-1.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/jdom-info.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/aop/config/spring-aop-2.5.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/validation-configuration-1.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/wsdl.plugin.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/info.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/aop/config/spring-aop-3.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/serviceComponents.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/tools.service.validator.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/metatype/cxfservlet.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/aop/config/spring-aop-2.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/metatype/metatype.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/aop/config/spring-aop-3.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/metatype/workqueue.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/cxf/cxf-extension-addr.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/blueprint/blueprint-ext.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/blueprint/ws-addressing.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/cxf/cxf-extension-http.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/blueprint/cxf-core.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/cxf/cxf-extension-jaxws.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/blueprint/blueprint-cm.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/blueprint/soap-binding.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/cxf/cxf-extension-xml.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/blueprint/cxf-simple.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/cxf/cxf-extension-camel.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/blueprint/cxf-jaxws.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/blueprint/cxf-jaxrs.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/blueprint/camel-cxf.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/blueprint/osgiservlet.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/cxf/cxf-servlet.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/blueprint/camel-blueprint.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/cxf/java2wsbeans.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/cxf/cxf-extension-soap.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/OSGI-INF/scr-plugin/scrinfo.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/aries/blueprint/blueprint.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/cxf/cxf.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemaorg_apache_xmlbeans/src/XMLSchema.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemaorg_apache_xmlbeans/src/xmlconfig.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/assembly/bin.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemaorg_apache_xmlbeans/src/XML.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemaorg_apache_xmlbeans/src/xsdownload.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/cxf/osgi/cxf-extension-osgi.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemaorg_apache_xmlbeans/src/ltgfmt.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/cxf/camel/cxf-extension-camel.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemaorg_apache_xmlbeans/src/substwsdl.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/xml/resolver/etc/catalog.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/xml/resolver/etc/catalog.rng" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-internals/1.0-SNAPSHOT/elling-internals-1.0-SNAPSHOT-tests.jar!/wordengine/splitted-variables.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-internals/1.0-SNAPSHOT/elling-internals-1.0-SNAPSHOT-tests.jar!/wordengine/splitted-variables-variant-2-merged.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-internals/1.0-SNAPSHOT/elling-internals-1.0-SNAPSHOT-tests.jar!/wordengine/splitted-variables-merged.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-internals/1.0-SNAPSHOT/elling-internals-1.0-SNAPSHOT-tests.jar!/wordengine/splitted-variables-variant-2.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/aries/blueprint/ext/blueprint-ext.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/context/config/spring-context-3.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/context/config/spring-context-3.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/context/config/spring-context-2.5.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/io.milton/aspirin/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/io.milton/milton-api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/io.milton/milton-mail-api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/io.milton/milton-ent-utils/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/io.milton/milton-server-ce/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/io.milton/milton-server-ent/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/io.milton/milton-mail-server/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/javax.jcr/jcr/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/joda-time/joda-time/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.slf4j/slf4j-api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.slf4j/jcl-over-slf4j/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/beans/factory/xml/spring-util-3.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.jcraft/jsch/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/commons-io/commons-io/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/commons-net/commons-net/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/beans/factory/xml/spring-beans-2.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/beans/factory/xml/spring-util-2.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/fasit.noark/noark-services/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/beans/factory/xml/spring-beans-3.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/fasit.noark/noark-domain-arkivverket/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/fasit.noark/noark-services-internals/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760861" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/javax.ws.rs/jsr311-api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-internals/1.0-SNAPSHOT/elling-internals-1.0-SNAPSHOT-tests.jar!/testAppContext.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.weakref/jmxutils/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/scheduling/config/spring-task-3.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/poi/xslf/usermodel/presetShapeDefinitions.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/beans/factory/xml/spring-beans-2.5.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/beans/factory/xml/spring-util-2.5.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/scheduling/config/spring-task-3.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/beans/factory/xml/spring-beans-3.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.atomikos/transactions/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.atomikos/atomikos-util/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/beans/factory/xml/spring-tool-2.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.atomikos/transactions-api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/beans/factory/xml/spring-tool-3.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.atomikos/transactions-jta/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/beans/factory/xml/spring-util-3.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.atomikos/transactions-jdbc/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.itextpdf/itextpdf/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/beans/factory/xml/spring-tool-3.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/commons-dbcp/commons-dbcp/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/commons-lang/commons-lang/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/beans/factory/xml/spring-tool-2.5.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schemafiles/ABWSchemaLib.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/commons-pool/commons-pool/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/fasit.elling/elling-domain/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/fasit.elling/elling-internals/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/fasit.elling/elling-migration/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/javax/servlet/resources/xml.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/javax/servlet/resources/j2ee_1_4.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/liquibase/db-changelog.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/fasit.elling/elling-integration/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/javax/servlet/resources/jsp_2_1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/javax/servlet/resources/jsp_2_0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/fasit.elling/elling-domain-agresso/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/javax/servlet/resources/j2ee_web_services_client_1_1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/fasit.elling/elling-integration-dsf-stubs/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/javax/servlet/resources/javaee_5.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/ABWTransaction.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/javax.xml.ws/jaxws-api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/javax/servlet/resources/javaee_web_services_client_1_2.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/javax/servlet/resources/j2ee_web_services_1_1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/commons-codec/commons-codec/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/Logs.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/javax/servlet/resources/web-app_2_4.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/Configuration.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.glassfish/javax.annotation/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.hibernate/hibernate-validator/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.liquibase/liquibase-core/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/jdbc.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/scheduledTasks.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/ch.qos.logback/logback-core/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/camel-osgi.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/ch.qos.logback/logback-classic/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.sun.istack/istack-commons-runtime/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.sun.xml.ws/policy/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/offentligJournal.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/javax.xml.soap/saaj-api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/arkivstruktur.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/ehcache-failsafe.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/net.sf.ehcache/ehcache-core/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/aries/blueprint/compendium/cm/blueprint-cm-1.0.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/internalsAppContext.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/security/config/spring-security-3.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/security/config/spring-security-3.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/logback.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/apache/aries/blueprint/compendium/cm/blueprint-cm-1.1.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/security/config/spring-security-2.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/security/config/spring-security-3.0.3.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/miltonContext.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/security/config/spring-security-2.0.4.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/oekonomiMigrationAppContext.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/security/config/spring-security-2.0.2.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/jdbc/config/spring-jdbc-3.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/security/config/spring-security-2.0.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.cxf/cxf-api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/jackrabbit-rmi-service.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/jdbc/config/spring-jdbc-3.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.cxf/cxf-rt-core/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/security/config/catalog.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.cxf/cxf-rt-ws-addr/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.cxf/cxf-tools-common/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/security/config/spring-security.xsl" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.cxf/cxf-rt-bindings-xml/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/migrationAppContext.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/remoting/rmi/RmiInvocationWrapperRTD.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/caching.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.cxf/cxf-common-utilities/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/camel-spring-v2.9.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.cxf/cxf-rt-bindings-soap/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/metadatakatalog.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/noark-services-internals-avlevering.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.cxf/cxf-rt-frontend-jaxrs/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/solrcontext.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.cxf/cxf-rt-frontend-jaxws/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.cxf/cxf-rt-frontend-simple/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/noark-services-internals-repository.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/sokratesAppContext.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760862" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.cxf/cxf-rt-transports-http/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.cxf/cxf-rt-databinding-jaxb/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.cxf/cxf-rt-transports-common/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/hjelpere.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/commons-logging/commons-logging/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/noark/noark-services-internals/1.0-SNAPSHOT/noark-services-internals-1.0-SNAPSHOT-tests.jar!/logback-test.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/handlers.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.tika/tika-core/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/noark/noark-services-internals/1.0-SNAPSHOT/noark-services-internals-1.0-SNAPSHOT-tests.jar!/noark-services-internals-test-repository.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/jdbc/support/sql-error-codes.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/noark/noark-services-internals/1.0-SNAPSHOT/noark-services-internals-1.0-SNAPSHOT-tests.jar!/noark-services-internals-test-context.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.subethamail/subethasmtp-smtp/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/security.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/endringslogg.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/camel-blueprint.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.google.guava/guava/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/addml.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/soap.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.google.zxing/core/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.google.zxing/javase/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/com.sun.xml.txw2/txw2/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/loependeJournal.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/javax.validation/validation-api/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.aries/org.apache.aries.util/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/validation.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/camel-spring.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/ehcache.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/noark-services-internals-handlers.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.camel/camel-cxf/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/ejb/config/spring-jee-3.1.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/populators.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.camel/camel-ftp/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/noark-services-internals-context.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.camel/camel-core/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/repositories.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.camel/camel-http/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/ejb/config/spring-jee-2.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/META-INF/maven/org.apache.camel/camel-jaxb/pom.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/schema2.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/fasit/elling/elling-migration/1.0-SNAPSHOT/elling-migration-1.0-SNAPSHOT-jar-with-dependencies.jar!/org/springframework/ejb/config/spring-jee-3.0.xsd" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381753760863" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/java/elling/service/handler/laan/UtsettTerminForfallHandler.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762318912" ignored="false" />
+    <file path="/UtsettTerminForfallHandler.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381757071594" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/ui/src/main/java/elling/ui/client/ui/wizard/laan/view/LaaneInformasjonsView.ui.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="/LaaneInformasjonsView.ui.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381756539208" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/ui/src/main/java/elling/ui/client/ui/wizard/laan/view/LaaneInformasjonsView.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320511" ignored="false" />
+    <file path="/LaaneInformasjonsView.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381756895946" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/domain/src/main/java/elling/domain/sak/Mottaker.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="/Mottaker.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381756753713" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/ui/src/main/java/elling/ui/client/ui/wizard/laan/SeLaanActivity.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/domain/src/main/java/elling/validation/constraint/laan/HeleLaaneBeloepetErOpptrappetValidator.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/ui/src/main/java/elling/ui/client/ui/wizard/laan/model/SeLaanModel.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/functional-tests/src/test/java/elling/seleniumtest/page/selaan/SeLaanSide.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/resources/populators.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/resources/repositories.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/ui/src/main/java/elling/ui/client/ui/wizard/laan/controller/SeLaanWizardController.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320510" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/resources/validation.xml" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320511" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/internals/src/main/java/elling/dto/core/laan/HentSeLaanResponse.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320511" ignored="false" />
+    <file path="$PROJECT_DIR$/../fasit/elling/ui/src/main/java/elling/ui/client/EllingValidatorFactory.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1381762320511" ignored="false" />
+    <file path="/*.regexp" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382119795519" ignored="false" />
+    <file path="/TrackerPanel.java" changelist="a1cb0e57-6b83-4b25-a7a1-0ba6858b5326" time="1382119985705" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +478,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -71,7 +515,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -81,69 +524,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserTracker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/OpenNI/UserTracker/org/OpenNI/Samples/UserTracker/UserTracker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="27" selection-start="5264" selection-end="5264" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SamplesConfig.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/OpenNI/Config/SamplesConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SamplesConfig.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples/OpenNI/KinectViewer/SamplesConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="69" selection-start="57" selection-end="84" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleOpenNI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/org/fun/kinecthacking/openni/SimpleOpenNI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="71" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewerPanel.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/samples/OpenNI/KinectViewer/ViewerPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="320" column="25" selection-start="11134" selection-end="11134" vertical-scroll-proportion="0.6311881">
-              <folding>
-                <element signature="e#0#11748#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataBufferByte.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/1.6.0_37-b06-434.jdk/Contents/Home/src.jar!/src/java/awt/image/DataBufferByte.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="19" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="OpenNIViewer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/samples/OpenNI/KinectViewer/OpenNIViewer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="23" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0">
+            <state line="17" column="18" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoxesApplication.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/NITE/Boxes/com/primesense/NITE/Samples/Boxes/BoxesApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="21" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,7 +545,50 @@
       <file leaf-file-name="UserTrackerApplication.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/samples/OpenNI/UserTracker/org/OpenNI/Samples/UserTracker/UserTrackerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="26" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.0">
+            <state line="65" column="11" selection-start="2809" selection-end="2809" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Skeletons.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker/Skeletons.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="299" column="36" selection-start="11987" selection-end="11987" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#18148#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewerPanel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/OpenNI/KinectViewer/ViewerPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="27" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#12125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrackerPanel.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker/TrackerPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="115" column="23" selection-start="3831" selection-end="3831" vertical-scroll-proportion="0.45544556">
+              <folding>
+                <element signature="e#0#10628#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GorillasTracker.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker/GorillasTracker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="20" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -181,12 +617,14 @@
         <option value="$PROJECT_DIR$/samples/OpenNI/Config/SamplesConfig.xml" />
         <option value="$PROJECT_DIR$/java/org/fun/kinecthacking/openni/SimpleOpenNI.java" />
         <option value="$PROJECT_DIR$/samples/OpenNI/KinectViewer/ViewerPanel.java" />
+        <option value="$PROJECT_DIR$/samples/OpenNI/GorillasTracker/Skeletons.java" />
+        <option value="$PROJECT_DIR$/samples/OpenNI/GorillasTracker/TrackerPanel.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1436" />
+    <option name="width" value="1409" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -217,6 +655,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -233,32 +672,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="kinecthacking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kinecthacking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kinecthacking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpenNI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserTracker" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,7 +733,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Config" />
+              <option name="myItemId" value="GorillasTracker" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,46 +748,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="samples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NITE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Boxes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kinecthacking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kinecthacking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kinecthacking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kinecthacking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -398,35 +771,35 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/samples/OpenNI/KinectViewer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/samples/OpenNI/GorillasTracker" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OpenNIViewer">
+  <component name="RunManager" selected="Application.GorillasTracker">
     <configuration default="false" name="BoxesApplication" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -526,6 +899,27 @@
       <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
+    <configuration default="false" name="GorillasTracker" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="GorillasTracker" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=$PROJECT_DIR$/native/" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="kinecthacking" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -538,19 +932,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -579,6 +960,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -617,18 +1011,20 @@
       <patterns />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.BoxesApplication" />
       <item index="1" class="java.lang.String" itemvalue="Application.UserTrackerApplication" />
       <item index="2" class="java.lang.String" itemvalue="Application.SimpleOpenNI" />
       <item index="3" class="java.lang.String" itemvalue="Application.OpenNIViewer" />
+      <item index="4" class="java.lang.String" itemvalue="Application.GorillasTracker" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.OpenNIViewer" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.GorillasTracker" />
         <item index="1" class="java.lang.String" itemvalue="Application.UserTrackerApplication" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SimpleOpenNI" />
-        <item index="3" class="java.lang.String" itemvalue="Application.BoxesApplication" />
+        <item index="2" class="java.lang.String" itemvalue="Application.BoxesApplication" />
+        <item index="3" class="java.lang.String" itemvalue="Application.OpenNIViewer" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SimpleOpenNI" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -656,32 +1052,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1409" height="878" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39973614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2589928" sideWeight="0.60026383" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23037417" sideWeight="0.60026383" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -750,37 +1146,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/samples/NITE/Boxes/com/primesense/NITE/Samples/Boxes/BoxesApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/Data/Sample-Scene.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="15" selection-start="10" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/org.OpenNI.jar!/org/OpenNI/Context.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="29" selection-start="1052" selection-end="1052" vertical-scroll-proportion="-10.8">
-          <folding />
-        </state>
+        <state line="19" column="29" selection-start="1052" selection-end="1052" vertical-scroll-proportion="-10.8" />
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/1.6.0_37-b06-434.jdk/Contents/Home/src.jar!/src/java/awt/image/DataBufferByte.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="19" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/OpenNI/UserTracker/org/OpenNI/Samples/UserTracker/UserTrackerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="26" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.0">
+        <state line="25" column="19" selection-start="968" selection-end="968" vertical-scroll-proportion="0.020491803">
           <folding />
         </state>
       </provider>
@@ -792,25 +1165,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/fun/kinecthacking/openni/SimpleOpenNI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="71" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/samples/OpenNI/Config/SamplesConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples/OpenNI/KinectViewer/OpenNIViewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="23" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -824,24 +1181,78 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/1.6.0_37-b06-434.jdk/Contents/Home/src.jar!/src/java/nio/Buffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="21" selection-start="6470" selection-end="6470" vertical-scroll-proportion="0.33260393">
-          <folding />
-        </state>
+        <state line="187" column="21" selection-start="6470" selection-end="6470" vertical-scroll-proportion="0.33260393" />
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/1.6.0_37-b06-434.jdk/Contents/Home/src.jar!/src/java/nio/ShortBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="239" column="22" selection-start="2492" selection-end="2492" vertical-scroll-proportion="0.26695842">
+        <state line="239" column="22" selection-start="2492" selection-end="2492" vertical-scroll-proportion="0.26695842" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/fun/kinecthacking/openni/SimpleOpenNI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="71" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/NITE/Boxes/com/primesense/NITE/Samples/Boxes/BoxesApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="21" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker/gorilla.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/OpenNI/UserTracker/org/OpenNI/Samples/UserTracker/UserTrackerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="11" selection-start="2809" selection-end="2809" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker/Skeletons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="299" column="36" selection-start="11987" selection-end="11987" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#18148#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/samples/OpenNI/KinectViewer/ViewerPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="320" column="25" selection-start="11134" selection-end="11134" vertical-scroll-proportion="0.6311881">
+        <state line="67" column="27" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#11748#0" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#12125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/OpenNI/KinectViewer/OpenNIViewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker/GorillasTracker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="20" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/OpenNI/GorillasTracker/TrackerPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="23" selection-start="3831" selection-end="3831" vertical-scroll-proportion="0.45544556">
+          <folding>
+            <element signature="e#0#10628#0" expanded="true" />
           </folding>
         </state>
       </provider>
