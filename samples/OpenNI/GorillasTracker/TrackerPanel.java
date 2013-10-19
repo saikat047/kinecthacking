@@ -58,7 +58,7 @@ public class TrackerPanel extends JPanel implements Runnable {
     // OpenNI
     private Context context;
     private DepthMetaData depthMD;
-    private Skeletons skeletons;
+    private SkeletonTracker skeletonTracker;
     private DepthGenerator depthGenerator;
     private SceneMetaData sceneMetaData;
 
@@ -110,7 +110,7 @@ public class TrackerPanel extends JPanel implements Runnable {
             sceneMetaData = userGen.getUserPixels(0);
             // used to return a map containing user IDs (or 0) at each depth location
 
-            skeletons = new Skeletons(userGen, depthGenerator);
+            skeletonTracker = new HeadHandsSkeletonTracker(userGen, depthGenerator);
 
             context.startGeneratingAll();
             System.out.println("Started context generating...");
@@ -143,7 +143,7 @@ public class TrackerPanel extends JPanel implements Runnable {
             } catch (GeneralException e) {
                 throw new IllegalStateException(e);
             }
-            skeletons.update();
+            skeletonTracker.update();
             imageCount++;
             totalTime += (System.currentTimeMillis() - startTime);
             repaint();
@@ -242,7 +242,7 @@ public class TrackerPanel extends JPanel implements Runnable {
         Graphics2D g2d = (Graphics2D) g;
         drawUserDepths(g2d);
         g2d.setFont(msgFont);
-        skeletons.draw(g2d);
+        skeletonTracker.draw(g2d);
         writeStats(g2d);
     }
 

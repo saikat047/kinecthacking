@@ -37,7 +37,7 @@ import org.OpenNI.StatusException;
 import org.OpenNI.UserEventArgs;
 import org.OpenNI.UserGenerator;
 
-public class Skeletons implements SkeletonTracker {
+public class HeadHandsSkeletonTracker implements SkeletonTracker {
     private static final String HEAD_FNM = "gorilla.png";
 
     // used to colour a user's limbs so they're different from the user's body color
@@ -55,7 +55,7 @@ public class Skeletons implements SkeletonTracker {
 
     private HashMap<Integer, HashMap<SkeletonJoint, SkeletonJointPosition>> userSkeletonJoints;
 
-    public Skeletons(UserGenerator userGenerator, DepthGenerator depthGenerator) {
+    public HeadHandsSkeletonTracker(UserGenerator userGenerator, DepthGenerator depthGenerator) {
         this.userGenerator = userGenerator;
         this.depthGenerator = depthGenerator;
         headImage = loadImage(HEAD_FNM);
@@ -108,7 +108,6 @@ public class Skeletons implements SkeletonTracker {
             for (int i = 0; i < userIDs.length; ++ i) {
                 int userID = userIDs[i];
                 if (skeletonCapability.isSkeletonCalibrating(userID)) {
-                    // test to avoid occasional crashes with isSkeletonTracking()
                     continue;
                 }
                 if (skeletonCapability.isSkeletonTracking(userID)) {
@@ -187,7 +186,6 @@ public class Skeletons implements SkeletonTracker {
             for (int i = 0; i < userIDs.length; ++ i) {
                 setLimbColor(g2d, userIDs[i]);
                 if (skeletonCapability.isSkeletonCalibrating(userIDs[i])) {
-                  // test to avoid occasional crashes with isSkeletonTracking()
                 }
                 else if (skeletonCapability.isSkeletonTracking(userIDs[i])) {
                     HashMap<SkeletonJoint, SkeletonJointPosition> skeletonJoints = userSkeletonJoints.get(userIDs[i]);
@@ -323,10 +321,16 @@ public class Skeletons implements SkeletonTracker {
 
     class NewUserObserver implements IObserver<UserEventArgs> {
         public void update(IObservable<UserEventArgs> observable, UserEventArgs args) {
-            System.out.println("Detected new user " + args.getId());
+            int userID = args.getId();
+            System.out.println("Detected new user " + userID);
             try {
-                // try to detect a pose for the new user
-                poseDetectionCapability.startPoseDetection(calibrationPoseName, args.getId());   // big-S ?
+                if (skeletonCapability.needPoseForCalibration()) {
+                    System.out.println("Starting pose detection");
+                    poseDetectionCapability.startPoseDetection(calibrationPoseName, userID);
+                } else {
+                    System.out.println("Starting skeleton calibration");
+                    skeletonCapability.requestSkeletonCalibration(userID, true);
+                }
             } catch (StatusException e) {
                 e.printStackTrace();
             }
@@ -343,7 +347,9 @@ public class Skeletons implements SkeletonTracker {
         public void update(IObservable<PoseDetectionEventArgs> observable, PoseDetectionEventArgs args) {
             int userID = args.getUser();
             try {
+                System.out.println("Stopping pose detection");
                 poseDetectionCapability.stopPoseDetection(userID);
+                System.out.println("Starting skeleton calibration");
                 skeletonCapability.requestSkeletonCalibration(userID, true);
             } catch (StatusException e) {
                 e.printStackTrace();
@@ -360,6 +366,7 @@ public class Skeletons implements SkeletonTracker {
                     skeletonCapability.startTracking(userID);
                     userSkeletonJoints.put(userID, new HashMap<SkeletonJoint, SkeletonJointPosition>());
                 } else  {
+                    System.out.println("Starting pose detection");
                     poseDetectionCapability.startPoseDetection(calibrationPoseName, userID);
                 }
             } catch (StatusException e) {
