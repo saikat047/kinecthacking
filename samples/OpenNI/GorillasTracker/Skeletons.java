@@ -122,56 +122,57 @@ public class Skeletons {
 
     // update all the joints for this userID in userSkeletonJoints
     private void updateJoints(int userID) {
-        HashMap<SkeletonJoint, SkeletonJointPosition> skeletonJoints = userSkeletonJoints.get(userID);
+        HashMap<SkeletonJoint, SkeletonJointPosition> skeletonJointPositionMap = userSkeletonJoints.get(userID);
 
-        updateJoint(skeletonJoints, userID, SkeletonJoint.HEAD);
-        updateJoint(skeletonJoints, userID, SkeletonJoint.NECK);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.HEAD);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.NECK);
 
-        updateJoint(skeletonJoints, userID, SkeletonJoint.LEFT_SHOULDER);
-        updateJoint(skeletonJoints, userID, SkeletonJoint.LEFT_ELBOW);
-        updateJoint(skeletonJoints, userID, SkeletonJoint.LEFT_HAND);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.LEFT_SHOULDER);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.LEFT_ELBOW);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.LEFT_HAND);
 
-        updateJoint(skeletonJoints, userID, SkeletonJoint.RIGHT_SHOULDER);
-        updateJoint(skeletonJoints, userID, SkeletonJoint.RIGHT_ELBOW);
-        updateJoint(skeletonJoints, userID, SkeletonJoint.RIGHT_HAND);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.RIGHT_SHOULDER);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.RIGHT_ELBOW);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.RIGHT_HAND);
 
-        updateJoint(skeletonJoints, userID, SkeletonJoint.TORSO);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.TORSO);
 
-        updateJoint(skeletonJoints, userID, SkeletonJoint.LEFT_HIP);
-        updateJoint(skeletonJoints, userID, SkeletonJoint.LEFT_KNEE);
-        updateJoint(skeletonJoints, userID, SkeletonJoint.LEFT_FOOT);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.LEFT_HIP);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.LEFT_KNEE);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.LEFT_FOOT);
 
-        updateJoint(skeletonJoints, userID, SkeletonJoint.RIGHT_HIP);
-        updateJoint(skeletonJoints, userID, SkeletonJoint.RIGHT_KNEE);
-        updateJoint(skeletonJoints, userID, SkeletonJoint.RIGHT_FOOT);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.RIGHT_HIP);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.RIGHT_KNEE);
+        updateJoint(skeletonJointPositionMap, userID, SkeletonJoint.RIGHT_FOOT);
     }
 
-    private void updateJoint(HashMap<SkeletonJoint, SkeletonJointPosition> skel, int userID, SkeletonJoint joint) {
+    private void updateJoint(HashMap<SkeletonJoint, SkeletonJointPosition> skeletonJointPositionMap,
+                             int userID, SkeletonJoint joint) {
         /*
             update the position of the specified user's joint by
             looking at the skeleton capability
         */
         try {
             // report unavailable joints (should not happen)
-            if (! skeletonCapability.isJointAvailable(joint) || ! skeletonCapability.isJointActive(joint)) {
+            if (!skeletonCapability.isJointAvailable(joint) || !skeletonCapability.isJointActive(joint)) {
                 System.out.println(joint + " not available for updates");
                 return;
             }
 
-            SkeletonJointPosition pos = skeletonCapability.getSkeletonJointPosition(userID, joint);
-            if (pos == null) {
+            SkeletonJointPosition jointPosition = skeletonCapability.getSkeletonJointPosition(userID, joint);
+            if (jointPosition == null) {
                 System.out.println("No update for " + joint);
                 return;
             }
       
             SkeletonJointPosition skeletonJointPosition = null;
-            if (pos.getPosition().getZ() != 0) {
-                skeletonJointPosition = new SkeletonJointPosition(
-                        depthGenerator.convertRealWorldToProjective(pos.getPosition()), pos.getConfidence());
+            if (jointPosition.getPosition().getZ() != 0) {
+                skeletonJointPosition = new SkeletonJointPosition(depthGenerator
+                                .convertRealWorldToProjective(jointPosition.getPosition()), jointPosition.getConfidence());
             } else {
                 skeletonJointPosition = new SkeletonJointPosition(new Point3D(), 0);
             }
-            skel.put(joint, skeletonJointPosition);
+            skeletonJointPositionMap.put(joint, skeletonJointPosition);
         } catch (StatusException e) {
             System.out.println(e);
         }
@@ -205,8 +206,8 @@ public class Skeletons {
             use the 'opposite' of the user ID color for the limbs, so they
             stand out against the colored body
         */
-        Color c = USER_COLORS[userID % USER_COLORS.length];
-        Color oppColor = new Color(255 - c.getRed(), 255 - c.getGreen(), 255 - c.getBlue());
+        Color color = USER_COLORS[userID % USER_COLORS.length];
+        Color oppColor = new Color(255 - color.getRed(), 255 - color.getGreen(), 255 - color.getBlue());
         g2d.setColor(oppColor);
     }
 
@@ -238,12 +239,17 @@ public class Skeletons {
     }
 
     // draw a line (limb) between the two joints (if they have positions)
-    private void drawLine(Graphics2D g2d, HashMap<SkeletonJoint, SkeletonJointPosition> skel, SkeletonJoint j1, SkeletonJoint j2) {
-        Point3D p1 = getJointPos(skel, j1);
-        Point3D p2 = getJointPos(skel, j2);
-        if ((p1 != null) && (p2 != null)) {
-            g2d.drawLine((int) p1.getX(), (int) p1.getY(), (int) p2.getX(), (int) p2.getY());
+    private void drawLine(Graphics2D g2d, HashMap<SkeletonJoint, SkeletonJointPosition> skeletonJointPositionMap,
+                          SkeletonJoint firstJoint, SkeletonJoint secondJoint) {
+        Point3D pointStart = getJointPos(skeletonJointPositionMap, firstJoint);
+        Point3D pointEnd = getJointPos(skeletonJointPositionMap, secondJoint);
+        if (pointStart != null && pointEnd != null) {
+            drawLine(g2d, pointStart, pointEnd);
         }
+    }
+
+    private void drawLine(Graphics2D g2d, Point3D pointStart, Point3D pointEnd) {
+        g2d.drawLine((int) pointStart.getX(), (int) pointStart.getY(), (int) pointEnd.getX(), (int) pointEnd.getY());
     }
 
     // get the (x, y, z) coordinate for the joint (or return null)

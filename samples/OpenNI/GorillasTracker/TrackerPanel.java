@@ -58,9 +58,9 @@ public class TrackerPanel extends JPanel implements Runnable {
     // OpenNI
     private Context context;
     private DepthMetaData depthMD;
-    private Skeletons skels;
-    private DepthGenerator depthGen;
-    private SceneMetaData sceneMD;
+    private Skeletons skeletons;
+    private DepthGenerator depthGenerator;
+    private SceneMetaData sceneMetaData;
 
     /*
         used to create a labeled depth map, where each pixel holds a user ID
@@ -79,8 +79,7 @@ public class TrackerPanel extends JPanel implements Runnable {
 
         imWidth = depthMD.getFullXRes();
         imHeight = depthMD.getFullYRes();
-        System.out.println("Image dimensions (" + imWidth + ", " +
-                                   imHeight + ")");
+        System.out.println("Image dimensions (" + imWidth + ", " + imHeight + ")");
 
         imgbytes = new byte[imWidth * imHeight * 3];
 
@@ -98,20 +97,20 @@ public class TrackerPanel extends JPanel implements Runnable {
             License license = new License("PrimeSense", "0KOIk2JeIBYClPWVnMoRKn5cdY4=");
             context.addLicense(license);
 
-            depthGen = DepthGenerator.create(context);
+            depthGenerator = DepthGenerator.create(context);
             MapOutputMode mapMode = new MapOutputMode(640, 480, 30);   // xRes, yRes, FPS
-            depthGen.setMapOutputMode(mapMode);
+            depthGenerator.setMapOutputMode(mapMode);
 
-            context.setGlobalMirror(true);         // set mirror mode
+            context.setGlobalMirror(true);
 
-            depthMD = depthGen.getMetaData();
+            depthMD = depthGenerator.getMetaData();
             // use depth metadata to access depth info (avoids bug with DepthGenerator)
 
             UserGenerator userGen = UserGenerator.create(context);
-            sceneMD = userGen.getUserPixels(0);
+            sceneMetaData = userGen.getUserPixels(0);
             // used to return a map containing user IDs (or 0) at each depth location
 
-            skels = new Skeletons(userGen, depthGen);
+            skeletons = new Skeletons(userGen, depthGenerator);
 
             context.startGeneratingAll();
             System.out.println("Started context generating...");
@@ -144,7 +143,7 @@ public class TrackerPanel extends JPanel implements Runnable {
             } catch (GeneralException e) {
                 throw new IllegalStateException(e);
             }
-            skels.update();
+            skeletons.update();
             imageCount++;
             totalTime += (System.currentTimeMillis() - startTime);
             repaint();
@@ -162,12 +161,12 @@ public class TrackerPanel extends JPanel implements Runnable {
             build a histogram of 8-bit depth values, and convert it to
             depth image bytes where each user is coloured differently
         */
-        ShortBuffer depthBuf = depthGen.getDepthMap().createShortBuffer();
+        ShortBuffer depthBuf = depthGenerator.getDepthMap().createShortBuffer();
         calcHistogram(depthBuf);
         depthBuf.rewind();
 
         // use user IDs to colour the depth map
-        ShortBuffer usersBuf = sceneMD.getData().createShortBuffer();
+        ShortBuffer usersBuf = sceneMetaData.getData().createShortBuffer();
         /*
             usersBuf is a labeled depth map, where each pixel holds an
             user ID (e.g. 1, 2, 3), or 0 to denote that the pixel is
@@ -200,7 +199,7 @@ public class TrackerPanel extends JPanel implements Runnable {
         }
     }
 
-    private void calcHistogram(ShortBuffer depthBuf) {
+    private void calcHistogram(ShortBuffer depthBuffer) {
         // reset histogram
         for (int i = 0; i <= maxDepth; i++) {
             histogram[i] = 0;
@@ -209,11 +208,12 @@ public class TrackerPanel extends JPanel implements Runnable {
         // record number of different depths in histogram[]
         int numPoints = 0;
         maxDepth = 0;
-        while (depthBuf.remaining() > 0) {
-            short depthVal = depthBuf.get();
+        while (depthBuffer.remaining() > 0) {
+            short depthVal = depthBuffer.get();
             if (depthVal > maxDepth) {
                 maxDepth = depthVal;
             }
+            // Update the frequency of depth values
             if ((depthVal != 0) && (depthVal < MAX_DEPTH_SIZE)) {      // skip histogram[0]
                 histogram[depthVal]++;
                 numPoints++;
@@ -242,25 +242,26 @@ public class TrackerPanel extends JPanel implements Runnable {
         Graphics2D g2d = (Graphics2D) g;
         drawUserDepths(g2d);
         g2d.setFont(msgFont);
-        skels.draw(g2d);
+        skeletons.draw(g2d);
         writeStats(g2d);
     }
 
+    /*
+        Create BufferedImage using the depth image bytes
+        and a color model, then draw it
+    */
     private void drawUserDepths(Graphics2D g2d) {
-        /*
-            Create BufferedImage using the depth image bytes
-            and a color model, then draw it
-        */
         // define an 8-bit RGB channel color model
-        ColorModel colorModel =
-                new ComponentColorModel(ColorSpace.getInstance(ColorSpace.CS_sRGB),
-                                        new int[] { 8, 8, 8 }, false, false, ComponentColorModel.OPAQUE,
-                                        DataBuffer.TYPE_BYTE);
+        ColorModel colorModel = new ComponentColorModel(ColorSpace.getInstance(ColorSpace.CS_sRGB),
+                                                        new int[] { 8, 8, 8 }, false, false,
+                                                        ComponentColorModel.OPAQUE,
+                                                        DataBuffer.TYPE_BYTE);
 
         // fill the raster with the depth image bytes
         DataBufferByte dataBuffer = new DataBufferByte(imgbytes, imWidth * imHeight * 3);
 
-        WritableRaster raster = Raster.createInterleavedRaster(dataBuffer, imWidth, imHeight, imWidth * 3, 3, new int[] { 0, 1, 2 }, null);
+        WritableRaster raster = Raster.createInterleavedRaster(dataBuffer, imWidth, imHeight, imWidth * 3, 3,
+                                                               new int[] { 0, 1, 2 }, null);
 
         // combine color model and raster to create a BufferedImage
         BufferedImage image = new BufferedImage(colorModel, raster, false, null);
@@ -269,10 +270,6 @@ public class TrackerPanel extends JPanel implements Runnable {
     }
 
     private void writeStats(Graphics2D g2d) {
-        /*
-            write statistics in bottom-left corner, or
-            "Loading" at start time
-        */
         g2d.setColor(Color.BLUE);
         int panelHeight = getHeight();
         if (imageCount > 0) {
